@@ -70,7 +70,7 @@ function FormLogin() {
 
   const emailFeedBackMessage = () => (
     <p className="feedback">
-      <i>Email inválido</i>
+      <i>Email com formato inválido</i>
     </p>
   );
 
