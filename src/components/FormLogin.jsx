@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
@@ -8,6 +8,8 @@ function FormLogin() {
     email: '',
     password: '',
   });
+  const [getTypeEmail, setTypeEmail] = useState(false);
+  const [getTypePassword, setTypePassword] = useState(false);
 
   const handleChange = ({ target }) => {
     const { name, value } = target;
@@ -16,6 +18,28 @@ function FormLogin() {
       [name]: value,
     });
   };
+
+  useEffect(() => {
+    const regexEmail = new RegExp('.+@[A-z]+[.]com');
+    if (regexEmail.test(getState.email)) {
+      setTypeEmail(false);
+    } else if (getState.email !== '') {
+      setTypeEmail(true);
+    } else {
+      setTypeEmail(false);
+    }
+  }, [getState.email]);
+
+  useEffect(() => {
+    const regexPassword = new RegExp('.{6}');
+    if (regexPassword.test(getState.password)) {
+      setTypePassword(false);
+    } else if (getState.password !== '') {
+      setTypePassword(true);
+    } else {
+      setTypePassword(false);
+    }
+  }, [getState.password]);
 
   const handleClick = () => {
     history.push('/home');
@@ -44,6 +68,18 @@ function FormLogin() {
     </Button>
   );
 
+  const emailFeedBackMessage = () => (
+    <p className="feedback">
+      <i>Email inválido</i>
+    </p>
+  );
+
+  const passwordFeedBackMessage = () => (
+    <p className="feedback">
+      <i>Senha precisa ter mais de 6 caracteres!</i>
+    </p>
+  );
+
   return (
     <Form>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
@@ -57,7 +93,9 @@ function FormLogin() {
           id="exampleEmail"
           placeholder="Digite seu e-mail"
           onChange={handleChange}
+          invalid={false}
         />
+        {getTypeEmail && emailFeedBackMessage()}
       </FormGroup>
       <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
         <Label for="examplePassword" className="mr-sm-2">
@@ -71,6 +109,7 @@ function FormLogin() {
           placeholder="Digite sua senha"
           onChange={handleChange}
         />
+        {getTypePassword && passwordFeedBackMessage()}
       </FormGroup>
       {verifyEmailAndPassword() ? buttonEnabled() : buttonDisabled()}
     </Form>
