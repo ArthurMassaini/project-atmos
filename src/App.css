@@ -1,8 +1,18 @@
 .login {
-  margin: 100px;
-  min-height: 400px;
+  height: 100vh;
+  width: 100vw;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  background: linear-gradient(to left, #1c3738 0%, #09814a 100%);
+  color: white;
+}
+
+.logo {
+  width: 350px;
+}
+
+.button {
+  margin-top: 10px;
 }
