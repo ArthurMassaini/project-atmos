@@ -1,6 +1,9 @@
-export const fetchData = () => {
-  const endpoint =
-    'https://desafio-frontend.s3-sa-east-1.amazonaws.com/valores.json';
+const data = require('../data/data.json');
 
-  return fetch(endpoint).then((result) => result);
+export const fetchData = () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve(data);
+    }, 200);
+  });
 };
