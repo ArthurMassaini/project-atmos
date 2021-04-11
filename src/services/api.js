@@ -4,7 +4,7 @@ export const fetchData = () => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(data);
-    }, 200);
+    }, 10);
   });
 };
 
@@ -19,7 +19,7 @@ export const fetchDataByDay = (day) => {
         }
       });
       resolve(filteredData);
-    }, 200);
+    }, 10);
   });
 };
 
@@ -35,6 +35,6 @@ export const fetchDataByHoursOfDay = (day, hours) => {
         }
       });
       resolve(filteredData);
-    }, 200);
+    }, 10);
   });
 };
