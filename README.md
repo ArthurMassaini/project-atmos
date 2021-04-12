@@ -21,12 +21,16 @@ A tela de **Login** possui uma simulação de uma validador, e como não possui 
 * O login valida se o e-mail possui o padrão *email@email.com*, fora desse padrão não é possível logar
 * O login valida se a senha possui 6 ou mais caracteres, fora desse padrão não é possível logar
 * O botão só fica habilitado caso ambos passarem na validação
-* *Nota:Pode ser qualquer e-mail e senha, como não tem cadastro, você vai ser redirecionado para home de toda forma, só lembre-se de seguir as regras acima*
+<br/>
+
+**Nota:Pode ser qualquer e-mail e senha, como não tem cadastro, você vai ser redirecionado para home de toda forma, só lembre-se de seguir as regras acima**
 
 A tela de **Home** possui um Header, uma Nav Bar lateral:
 * O Header possui a logo, um toggle para abrir a Nav Bar e um botão para logout, onde o usuário é redirecionado para tela de Login
 * Ao clicar no toggle do Header, abre-se uma Nav Bar lateral, onde é possível escolher as medições que ao clicadas, mostra o gráfico pertinente aquela medição
-* *Nota: Por padrão o gráfico mostrado é do kWh*
+<br/>
+
+**Nota: Por padrão o gráfico mostrado é do kWh**
 
 ## :bar_chart: Deploy
 
