@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
-import measures from './measures';
+import toggle from './toggle';
+import showChart from './showChart';
 
-export default combineReducers({ measures });
+export default combineReducers({ toggle, showChart });

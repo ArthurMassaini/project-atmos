@@ -1,3 +1,2 @@
-export const LOADING = 'LOADING';
-export const OK = 'OK';
-export const RETRIEVE_ALL = 'RETRIEVE_ALL';
+export const TOGGLE = 'TOGGLE';
+export const SHOW = 'SHOW';
