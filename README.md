@@ -43,5 +43,5 @@ Caso queira testar esse projeto localmente, siga os seguintes passos:
 
 ## :framed_picture: Imagens
 
-![Login](./assets/login.png)
-![Home](./assets/home.png)
+![Login](./src/assets/login.png)
+![Home](./src/assets/home.png)
