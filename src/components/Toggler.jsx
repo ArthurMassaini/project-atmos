@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Navbar, NavbarToggler } from 'reactstrap';
 
-const NavToggler = () => {
+const Toggler = () => {
   const [collapsed, setCollapsed] = useState(true);
 
   const toggleNavbar = () => setCollapsed(!collapsed);
@@ -15,4 +15,4 @@ const NavToggler = () => {
   );
 };
 
-export default NavToggler;
+export default Toggler;
