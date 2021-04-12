@@ -4,6 +4,7 @@ import Nav from '../components/Nav';
 import ChartKw from '../components/ChartKw';
 import ChartI from '../components/ChartI';
 import ChartV from '../components/ChartV';
+import ChartFp from '../components/ChartFp';
 
 function Home() {
   return (
@@ -18,6 +19,8 @@ function Home() {
         <ChartI />
         <h2 className="title">Média da tensão</h2>
         <ChartV />
+        <h2 className="title">Média do fator de potência (% de eficiência)</h2>
+        <ChartFp />
       </section>
     </main>
   );
