@@ -17,7 +17,16 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 Esse projeto foi desenvolvido para um desafio proposto de fron-end onde foi criado uma tela simulada de um Login e uma página Home onde é mostrado gráficos pertinentes as medições (Tensão, Corrente, Fator de potência, kWh) de uma instalação elétrica por o período de uma semana, disponibilizados em um arquivo JSON.
 
-A tela de Login possui uma simulação
+A tela de **Login** possui uma simulação de uma validador, como não possui tela de cadastro, segue as seguintes regras:
+* O login valida se o e-mail possui o padrão __email@email.com__, fora desse padrão não é possível logar
+* O login valida se a senha possui 6 ou mais caracteres, fora desse padrão não é possível logar
+* O botão só fica habilitado caso ambos passarem na validação
+__Nota:Pode ser qualquer e-mail e senha, como não tem cadastro, você vai ser redirecionado para home de toda forma, só lembre-se de seguir as regras acima__
+
+A tela de **Home** possui um Header, uma Nav Bar lateral:
+* O Header possui a logo, um toggle para abrir a Nav Bar e um botão para logout, onde o usuário é redirecionado para tela de Login
+* Ao clicar no toggle do Header, abre-se uma Nav Bar lateral, onde é possível escolher as medições que ao clicadas, mostra o gráfico pertinente aquela medição
+__Nota: Por padrão o gráfico mostrado é do kWh__
 
 ## :bar_chart: Deploy
 
