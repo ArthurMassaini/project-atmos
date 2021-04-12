@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import * as API from '../services/api';
 
-function Chart() {
+function ChartI() {
   const [getState, setState] = useState({
     loading: true,
   });
@@ -18,46 +18,39 @@ function Chart() {
     const total = data.reduce((acc, element) => {
       return acc + element[value];
     }, 0);
-    return (total / data.length).toFixed(2);
+    return (total / data.length).toFixed(4);
   };
 
   useEffect(() => {
     const getData = async () => {
       let response = [];
-      let totalKwhA = [];
-      let totalKwhB = [];
-      let totalKwhC = [];
-      let total = [];
+      let avgIA = [];
+      let avgIB = [];
+      let avgIC = [];
 
       for (let i = 0; i < 7; i += 1) {
         response = [...response, await API.fetchDataByDay(i)];
       }
 
       for (let i = 0; i < 7; i += 1) {
-        totalKwhA = [...totalKwhA, sumValue(response[i], 'kWhA')];
-        totalKwhB = [...totalKwhB, sumValue(response[i], 'kWhB')];
-        totalKwhC = [...totalKwhC, sumValue(response[i], 'kWhC')];
-        total = [
-          ...total,
-          Number(totalKwhA[i]) + Number(totalKwhB[i]) + Number(totalKwhC[i]),
-        ];
+        avgIA = [...avgIA, avgValue(response[i], 'IA')];
+        avgIB = [...avgIB, avgValue(response[i], 'IB')];
+        avgIC = [...avgIC, avgValue(response[i], 'IC')];
       }
 
       // const avgIA = avgValue(response, 'IA');
 
       setState({
         loading: false,
-        // avgIA,
-        totalKwhA,
-        totalKwhB,
-        totalKwhC,
-        total,
+        avgIA,
+        avgIB,
+        avgIC,
       });
     };
     getData();
   }, []);
 
-  if (getState.loading) return <h1>LOADING...</h1>;
+  if (getState.loading) return <></>;
 
   return (
     <section className="section">
@@ -74,15 +67,15 @@ function Chart() {
           ],
           datasets: [
             {
-              label: 'KwhA',
+              label: 'IA',
               data: [
-                getState.totalKwhA[0],
-                getState.totalKwhA[1],
-                getState.totalKwhA[2],
-                getState.totalKwhA[3],
-                getState.totalKwhA[4],
-                getState.totalKwhA[5],
-                getState.totalKwhA[6],
+                getState.avgIA[0],
+                getState.avgIA[1],
+                getState.avgIA[2],
+                getState.avgIA[3],
+                getState.avgIA[4],
+                getState.avgIA[5],
+                getState.avgIA[6],
               ],
               backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -97,15 +90,15 @@ function Chart() {
               borderWidth: 1,
             },
             {
-              label: 'KwhB',
+              label: 'IB',
               data: [
-                getState.totalKwhB[0],
-                getState.totalKwhB[1],
-                getState.totalKwhB[2],
-                getState.totalKwhB[3],
-                getState.totalKwhB[4],
-                getState.totalKwhB[5],
-                getState.totalKwhB[6],
+                getState.avgIB[0],
+                getState.avgIB[1],
+                getState.avgIB[2],
+                getState.avgIB[3],
+                getState.avgIB[4],
+                getState.avgIB[5],
+                getState.avgIB[6],
               ],
 
               backgroundColor: [
@@ -129,15 +122,15 @@ function Chart() {
               borderWidth: 1,
             },
             {
-              label: 'KwhC',
+              label: 'IC',
               data: [
-                getState.totalKwhC[0],
-                getState.totalKwhC[1],
-                getState.totalKwhC[2],
-                getState.totalKwhC[3],
-                getState.totalKwhC[4],
-                getState.totalKwhC[5],
-                getState.totalKwhC[6],
+                getState.avgIC[0],
+                getState.avgIC[1],
+                getState.avgIC[2],
+                getState.avgIC[3],
+                getState.avgIC[4],
+                getState.avgIC[5],
+                getState.avgIC[6],
               ],
               backgroundColor: [
                 'rgba(255, 159, 64, 0.2)',
@@ -156,37 +149,6 @@ function Chart() {
                 'orange',
                 'orange',
                 'orange',
-              ],
-              borderWidth: 1,
-            },
-            {
-              label: 'Soma',
-              data: [
-                getState.total[0],
-                getState.total[1],
-                getState.total[2],
-                getState.total[3],
-                getState.total[4],
-                getState.total[5],
-                getState.total[6],
-              ],
-              backgroundColor: [
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-              ],
-              borderColor: [
-                'green',
-                'green',
-                'green',
-                'green',
-                'green',
-                'green',
-                'green',
               ],
               borderWidth: 1,
             },
@@ -219,4 +181,4 @@ function Chart() {
   );
 }
 
-export default Chart;
+export default ChartI;
