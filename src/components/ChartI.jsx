@@ -7,13 +7,6 @@ function ChartI() {
     loading: true,
   });
 
-  const sumValue = (data, value) => {
-    const total = data.reduce((acc, element) => {
-      return acc + element[value];
-    }, 0);
-    return (total / 1000).toFixed(4);
-  };
-
   const avgValue = (data, value) => {
     const total = data.reduce((acc, element) => {
       return acc + element[value];
@@ -37,8 +30,6 @@ function ChartI() {
         avgIB = [...avgIB, avgValue(response[i], 'IB')];
         avgIC = [...avgIC, avgValue(response[i], 'IC')];
       }
-
-      // const avgIA = avgValue(response, 'IA');
 
       setState({
         loading: false,
