@@ -48,4 +48,3 @@ Caso queira testar esse projeto localmente, siga os seguintes passos:
 
 ![Login](./src/assets/login.png)
 ![Home](./src/assets/home.png)
-![NotFound](./src/assets/notFound.png)
