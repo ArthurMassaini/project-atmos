@@ -1,41 +1,47 @@
-# Projeto react de medições elétricas
+# :electric_plug: Projeto react de medições elétricas
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+![languages](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos/)
+![size](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
+![commit](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
+![issues](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
 
-Esse projeto é de uma tela simulada de um Login com uma página Home onde é mostrado gráficos pertinentes as medidas elétricas de uma instalação por o período de uma semana. [Create React App](https://github.com/facebook/create-react-app).
+## :rocket: Tecnologias
 
-## Setup
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+* Javascript / React
+* CSS / Reactstrap
+* Redux
+* ChartJS / React-ChartJS 2
 
-Para rodar esse projeto localmente, após clona-lo, apenas instale as dependencias na raiz do projeto com o comando `npm install`, assim use o comando `npm start` para testa-lo, vai estar disponivel em localhost:3000
+## :computer: Projeto
 
+Esse projeto foi desenvolvido para um desafio proposto de front-end onde foi criado uma tela simulada de um Login e uma página Home onde é mostrado gráficos pertinentes as medições (Tensão, Corrente, Fator de potência, kWh) de uma instalação elétrica por o período de uma semana, disponibilizados em um arquivo JSON.
 
+A tela de **Login** possui uma simulação de uma validador, e como não possui tela de cadastro, segue as seguintes regras:
+* O login valida se o e-mail possui o padrão *email@email.com*, fora desse padrão não é possível logar
+* O login valida se a senha possui 6 ou mais caracteres, fora desse padrão não é possível logar
+* O botão só fica habilitado caso ambos passarem na validação
 
-## Learn More
+**Nota: Pode ser qualquer e-mail e senha, como não tem cadastro, você vai ser redirecionado para home de toda forma, só lembre-se de seguir as regras acima**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+A tela de **Home** possui um Header, uma Nav Bar lateral e os gráficos:
+* O Header possui a logo, um toggle para abrir a Nav Bar e um botão para logout, onde o usuário é redirecionado para tela de Login
+* Ao clicar no toggle do Header, abre-se uma Nav Bar lateral, onde é possível escolher as medições que ao clicadas, mostra o gráfico pertinente aquela medição
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Nota: Por padrão o gráfico mostrado é do kWh**
 
-### Code Splitting
+## :bar_chart: Deploy
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Se quiser testar o deploy, o projeto está disponível através desse link: [Link do Projeto](https://project-atmos.vercel.app/).
 
-### Analyzing the Bundle Size
+## :gear: Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Caso queira testar esse projeto localmente, siga os seguintes passos:
+* Faça o download do projeto ou clone através do comando `git clone :HttpOuSSH` 
+* Instale as dependências na raiz do projeto com o comando `npm install`
+* Use o comando `npm start` para abrir o projeto, vai estar disponivel em **localhost:3000**
 
-### Making a Progressive Web App
+## :framed_picture: Imagens
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Login](./src/assets/login.png)
+![Home](./src/assets/home.png)
