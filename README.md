@@ -18,7 +18,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 Esse projeto foi desenvolvido para um desafio proposto de front-end onde foi criado uma tela simulada de um Login e uma página Home onde é mostrado gráficos pertinentes as medições (Tensão, Corrente, Fator de potência, kWh) de uma instalação elétrica por o período de uma semana, disponibilizados em um arquivo JSON.
 
 A tela de **Login** possui uma simulação de uma validador, e como não possui tela de cadastro, segue as seguintes regras:
-* O login valida se o e-mail possui o padrão *email@email.com*, fora desse padrão não é possível logar
+* O login valida se o e-mail possui o padrão **email@email.com**, fora desse padrão não é possível logar
 * O login valida se a senha possui 6 ou mais caracteres, fora desse padrão não é possível logar
 * O botão só fica habilitado caso ambos passarem na validação
 
