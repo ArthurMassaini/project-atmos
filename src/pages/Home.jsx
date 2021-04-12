@@ -1,4 +1,6 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import ChartKw from '../components/ChartKw';
@@ -7,10 +9,12 @@ import ChartV from '../components/ChartV';
 import ChartFp from '../components/ChartFp';
 
 function Home() {
+  const { active } = useSelector((state) => state.toggle);
+
   return (
     <main className="main">
       <Header />
-      <Nav />
+      {active && <Nav />}
       <section>
         <h1 className="title">Medidas referentes a semana: 20/02 - 26/02</h1>
         <h2 className="title">Total em KhW</h2>
