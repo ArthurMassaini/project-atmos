@@ -1,6 +1,6 @@
 # :electric_plug: Projeto react de medições elétricas
 
-![languages](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos)
+![languages](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos/)
 ![size](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
 ![commit](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
 ![issues](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
@@ -16,6 +16,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 ## :computer: Projeto
 
 Esse projeto foi desenvolvido para um desafio proposto de fron-end onde foi criado uma tela simulada de um Login e uma página Home onde é mostrado gráficos pertinentes as medições (Tensão, Corrente, Fator de potência, kWh) de uma instalação elétrica por o período de uma semana, disponibilizados em um arquivo JSON.
+
+A tela de Login possui uma simulação
 
 ## :bar_chart: Deploy
 
