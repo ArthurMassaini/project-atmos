@@ -44,7 +44,7 @@ function ChartFp() {
   if (getState.loading) return <div className="loader">LOADING...</div>;
 
   return (
-    <section className="section">
+    <section className="section-chart">
       <Bar
         data={{
           labels: [

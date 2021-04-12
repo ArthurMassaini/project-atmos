@@ -54,11 +54,12 @@
   margin-top: 10px;
 }
 
-.section {
+.section-chart {
   margin-right: 150px;
   margin-left: 150px;
   margin-bottom: 150px;
   height: 300px;
+  box-shadow: 150px 150px 100;
 }
 
 .title {
@@ -90,6 +91,10 @@
 
 .link:hover {
   color: white;
+}
+
+.center {
+  text-align: center;
 }
 
 /* LOADER UTILIZADO EM: https://projects.lukehaas.me/css-loaders/ */
