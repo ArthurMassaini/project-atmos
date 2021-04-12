@@ -1,8 +1,16 @@
 # Projeto react de medições elétricas
 
-![Image of Yaktocat](https://pics.freeicons.io/uploads/icons/png/21088442871540553614-512.png)
+![size](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos)
+![test](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
+![tes1](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
+![tea](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
+
 
 Esse projeto é de uma tela simulada de um Login com uma página Home onde é mostrado gráficos pertinentes as medidas elétricas de uma instalação por o período de uma semana. [Teste aqui!](https://project-atmos.vercel.app/).
+
+## Tecnologias
+
+Se quiser testar o deploy, o projeto está disponível através desse link: [Projeto](https://project-atmos.vercel.app/).
 
 ## Deploy
 
