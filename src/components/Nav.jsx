@@ -34,16 +34,16 @@ function Nav() {
   return (
     <nav className="nav">
       <button type="button" className="button-nav" onClick={handleClick}>
-        <h4>kWh</h4>
+        <h5>kWh</h5>
       </button>
       <button type="button" className="button-nav" onClick={handleClick}>
-        <h4>Corrente</h4>
+        <h5>Corrente</h5>
       </button>
       <button type="button" className="button-nav" onClick={handleClick}>
-        <h4>Tensão</h4>
+        <h5>Tensão</h5>
       </button>
       <button type="button" className="button-nav" onClick={handleClick}>
-        <h4>Fator de potência</h4>
+        <h5>Fator de potência</h5>
       </button>
     </nav>
   );

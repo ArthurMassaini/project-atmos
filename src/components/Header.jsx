@@ -10,11 +10,11 @@ function Header() {
       <h1>
         <img src={logo} alt="atmos" className="logo-header" />
       </h1>
-      <h1>
+      <h4>
         <Link to="/" className="link">
           Logout
         </Link>
-      </h1>
+      </h4>
     </header>
   );
 }

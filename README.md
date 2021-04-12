@@ -1,6 +1,6 @@
 # :electric_plug: Projeto react de medições elétricas
 
-![languages](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos/)
+![languages](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos)
 ![size](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
 ![commit](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
 ![issues](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
