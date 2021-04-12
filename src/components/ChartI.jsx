@@ -41,7 +41,7 @@ function ChartI() {
     getData();
   }, []);
 
-  if (getState.loading) return <></>;
+  if (getState.loading) return <div className="loader">LOADING...</div>;
 
   return (
     <section className="section">
