@@ -4,7 +4,7 @@
 ![size](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
 ![commit](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
 ![issues](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
-![grade](https://img.shields.io/github//codacy/ArthurMassaini/project-atmos)
+![grade](https://img.shields.io/github/codacy/ArthurMassaini/project-atmos)
 
 
 Esse projeto é de uma tela simulada de um Login com uma página Home onde é mostrado gráficos pertinentes as medidas elétricas de uma instalação por o período de uma semana. [Teste aqui!](https://project-atmos.vercel.app/).
