@@ -1,16 +1,21 @@
 # Projeto react de medições elétricas
 
-![size](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos)
-![test](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
-![tes1](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
-![tea](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
+![languages](https://img.shields.io/github/languages/count/ArthurMassaini/project-atmos)
+![size](https://img.shields.io/github/repo-size/ArthurMassaini/project-atmos)
+![commit](https://img.shields.io/github/last-commit/ArthurMassaini/project-atmos)
+![issues](https://img.shields.io/github/issues/ArthurMassaini/project-atmos)
+![grade](https://img.shields.io/github//codacy/ArthurMassaini/project-atmos)
 
 
 Esse projeto é de uma tela simulada de um Login com uma página Home onde é mostrado gráficos pertinentes as medidas elétricas de uma instalação por o período de uma semana. [Teste aqui!](https://project-atmos.vercel.app/).
 
 ## Tecnologias
 
-Se quiser testar o deploy, o projeto está disponível através desse link: [Projeto](https://project-atmos.vercel.app/).
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+* Javascript / React
+* CSS / Reactstrap
+* Redux
+* ChartJS / React-ChartJS 2
 
 ## Deploy
 
